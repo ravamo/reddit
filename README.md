@@ -12,15 +12,14 @@ This is the main libs used in this project:
 I never used Reddit and I don't know well the behavior still confuse me with the terms 
 
 ## solution
-El proyecto tiene un POPO donde vamos dejando la informaciòn que vamos procesando (**RedditModel**). Por falta de tiempo
-he escrito una sola clase,(como comentare mas adelante creo que tendria que haber dos partes una de servidor o tra cliente)
-cargo la configuración de un fichero init , genero una conexion a  la api usando **praw** y voy procesando el contenido.
+The project has POPO where we are leaving the information that we are processing (** RedditModel **). Lack of time
+I have written only one class, (as I will comment later, I think there should be two parts, one server or one client)
+I charge the configuration of an init file, I generate a connection to the api using ** praw ** and I am processing the content.
 
-Para hacer la ordenacion y he usado una lamda por comodida , con el volumen no he notado nada de mejora que con el modo iterativo
+To do the sorting and I used a lambda for comfort, with the volume I have not noticed anything of improvement that with the iterative mode
 
-Escribo todo los popo que he generado en una lista y voy recorriendo la lista y generando los kpi y escribiendo en un fichero de txt
-### considrations
-Al no tener un sistema asincrono no he generado la parte cliente y la parte server
+I write all the popo that I have generated in a list and I go through the list and generating the kpi and writing in a file of txt sholbe a factory patter in case need to change the export csv,database,kafka,etc..
+
 
 ## bonus track
 1. How can you integrate your solution with a central scheduler?
